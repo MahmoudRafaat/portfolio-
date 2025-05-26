@@ -399,15 +399,15 @@ section {
 
 @media (max-width: 570px) {
     body {
-        font-size: 10px;
+        font-size: 6px;
     }
 
     .main-text h2 {
-        font-size: 0.8em;
+        font-size: 0.4em;
     }
 
     .main-text h3 {
-        font-size: 1.1em;
+        font-size: 0.6em;
     }
 
     .card, .project-card {
