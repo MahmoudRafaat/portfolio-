@@ -1,33 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-        font-family: 'Poppins', sans-serif;
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- scroll-behavior: smooth;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-
-.main-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+body {
+    background-color: #fff;
+    font-size: 16px;
 }
 
-.main-text {
-  max-width: 600px;
-}
-
-.main-image img {
-  max-width: 300px;
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-}
-
-header{
+header {
     background-color: #f0f0f0;
     width: 100%;
     position: fixed;
@@ -37,241 +23,243 @@ header{
     align-items: center;
     padding: 10px 200px;
 }
-.logo{
-    text-decoration: none;
-    color: #3a6cf4;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.7em;
 
-    
+.logo {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.8em;
 }
 
-.navagation a{
-    text-decoration: none;
+.navagation a {
     color: #3a6cf4;
+    text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
     padding-left: 30px;
-
-
 }
 
-
-.navagation a:hover{
-    
-    color:#601cfc;
+.navagation a:hover {
+    color: #601cfc;
 }
-section{
-padding: 100px 200px;
 
-
+section {
+    padding: 100px 200px;
 }
-.main{
+
+.main {
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(image/rm378-09-x\(2\).jpg) no-repeat;
     background-size: cover;
-    background-position:center;
-  
+    background-position: center;
     background-attachment: fixed;
 }
-.main h2{
-color: #fff;
-font-size: 1.4em;
-font-weight: 500;
 
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
-.main h2 span{
-display: inline-block;
-margin-top: 10px;
+
+.main-text {
+    flex: 1 1 45%;
+    color: #fff;
+}
+
+.main-text h2 {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main-text h2 span {
+    display: inline-block;
+    margin-top: 10px;
     color: #4e9eff;
-    font-size: 1.8em;
+    font-size: 3em;
     font-weight: 600;
 }
-.main h3{
-    color: #fff;
+
+.main-text h3 {
     font-size: 2em;
     font-weight: 700;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-
-
+    margin: 10px 0 30px;
 }
-.main-bin{
+
+.main-bin {
+    background-color: #3a6cf4;
     color: #fff;
-    background-color:#3a6cf4;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 600;
-    display: inline-block;
     padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
     border-radius: 15px;
+    transition: 0.7s ease;
+    display: inline-block;
     margin-bottom: 40px;
-    transition: 0.6s ease;
-
-
 }
-.main-bin:hover{
 
+.main-bin:hover {
     background-color: #0a49f6;
     transform: scale(1.1);
 }
-.soical-icons a{
 
+.soical-icons a {
     color: #fff;
     font-size: 1.7em;
-    padding-right: 30px;
+    margin-right: 20px;
 }
-.title{
-display: flex;
-justify-content: center;
-color:#3a6cf4;
-font-size: 2em;
-font-weight: 800;
-margin-bottom: 30px;
 
-
+.main-image {
+    flex: 1 1 45%;
+    text-align: center;
 }
-.content{
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.2);
+    object-fit: cover;
+}
+
+/* General Card Styles */
+.cards .title,
+.projects .title {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
 }
-.card{
-background-color: #fff;
-width: 21.25em;
-box-shadow: 0 5px 25px rgba(1 1 1 /15%);
-border-radius: 10px;
-padding: 25px;
-margin: 15px;
-transition: 0.6s ease;
-}
-.card :hover{
 
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    width: 100%;
+    max-width: 22em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
     transform: scale(1.1);
 }
-.icon{
 
+.card .icon {
     color: #3a6cf4;
-    font-size: 8em;
-    text-align: center;
-
-}
-.info{
+    font-size: 4em;
     text-align: center;
 }
-.info h3{
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
     color: #3a6cf4;
-    font-size: 1.2;
+    font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
 }
-.projects{
 
-    background-color:#000030 ;
+.projects {
+    background-color: #000016;
 }
-.projects.content{
 
-    margin-top:30px ;
-}
-.project-card{
-
-    background-color:#fff;
-    border: 1px solid #fff ;
-    min-height: 14em;
-    width: 23em;
-    overflow:hidden ;
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
     border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 23em;
     margin: 20px;
     transition: 0.7s ease;
+    position: relative;
 }
-.project-card:hover .project-image{
-opacity: 0.9;
 
-
+.project-card:hover {
+    transform: scale(1.05);
 }
-.project-card:hover{
-    transform: scale(1.1);
-    
-    
-    }
+
 .project-image {
-  height: 400px; /* consistent height for all images */
+  aspect-ratio: 8 / 9;
   overflow: hidden;
-  border-top-left-radius: 0.75rem;  /* match card radius if needed */
-  border-top-right-radius: 0.75rem;
 }
 
-.project-image img{
+.project-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* or 'contain' if you want the whole image visible */
-  display: block;
-}
-.project-image .slider img {
-  width: 100%;
-  height: 800px;
-  object-fit: cover; /* or 'contain' if you want the whole image visible */
-  display: block;
-}
-/* Height for course certificate images */
-.course-image {
-  height: 400px; /* or any value suitable for certificates */
-}
-
-.course-image img {
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Height for slider images */
-.slider-image {
-  height: 800px; /* larger height for project showcases */
-}
-
-.slider-image img {
-  height: 100%;
-  object-fit: cover;
+  object-fit: fill;
+    display: block;
 }
 
 
-
-
-.project-info{
-
-padding: 1em;
-
+.project-info {
+    padding: 1em;
 }
-.project-cat{
 
-    font-size: 0.8em;
-    color: #000000;
-
+.project-cat {
+    font-size: 0.9em;
+    color: #000;
 }
-.project-title{
-display: flex;
-justify-content: space-between;
-text-transform: uppercase;
-font-weight: 800;
-margin-top: 10px;
 
+.project-title {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
 
+/* Slider styling */
+.slider {
+    position: relative;
+}
 
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
 }
-.detalis{
-    text-decoration: none;
-    color: #3a6cf4;
+
+.slide.active {
+    display: block;
 }
-.detalis:hover{
-    color: #601cfc;
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(58, 108, 244, 0.8);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
 }
-.contact .icon{
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Contact Section */
+.contact .icon {
     font-size: 4.5em;
 }
 
@@ -280,14 +268,18 @@ margin-top: 10px;
 }
 
 .contact .info p {
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
+
+/* Footer */
 .footer {
     background-color: #000016;
     color: #fff;
     padding: 2em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-title {
@@ -298,9 +290,11 @@ margin-top: 10px;
 .footer-title span {
     color: #3a6cf4;
 }
-.footer .social-icons a{
-    font-size: 1em;
-    padding: 0 12px 0 0;
+
+.footer .soical-icons a {
+    font-size: 1.5em;
+    color: #fff;
+    margin-right: 15px;
 }
 .slider {
   position: relative;
@@ -338,58 +332,85 @@ margin-top: 10px;
 .slider .next {
   right: 5px;
 }
+/* Height for slider images */
+.slider-image {
+  height: 800px; /* larger height for project showcases */
+}
 
-@media (max-width :1024px){
+.slider-image img {
+  height: 100%;
+  object-fit: cover;
+}
+.project-info {
+  position: relative;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+  float: inline-end;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
 
 
- header{
+/* Responsive Design */
+@media (max-width: 1023px) {
+    header {
         padding: 12px 20px;
     }
 
-    .navigation a{
-        padding-left: 10px;
-    }
-
-    .title{
-        font-size: 1.8em;
-    }
-
-    section{
+    section {
         padding: 80px 20px;
     }
 
-    .main-content h2{
+    .main-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-text, .main-image {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 671px) {
+    body {
+        font-size: 14px;
+    }
+
+    .main-text h2 {
         font-size: 1em;
     }
 
-    .main-content h3{
-        font-size: 1.6em;
+    .main-text h3 {
+        font-size: 1.4em;
     }
 
-    .content{
-        flex-direction: column;
-        align-items: center;
+    .card, .project-card {
+        margin: 10px 0;
     }
-
 }
 
-@media (max-width:641px){
-    body{
-        font-size: 12px;
+@media (max-width: 570px) {
+    body {
+        font-size: 10px;
     }
 
-    .main-content h2{
+    .main-text h2 {
         font-size: 0.8em;
     }
 
-    .main-content h3{
-        font-size: 1.4em;
+    .main-text h3 {
+        font-size: 1.1em;
     }
-}
 
-@media (max-width:300px){
-    body{
-        font-size: 10px;
-     
+    .card, .project-card {
+        margin: 10px 0;
     }
 }
