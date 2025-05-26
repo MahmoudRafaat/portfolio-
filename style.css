@@ -7,6 +7,26 @@
  scroll-behavior: smooth;
 
 }
+
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-text {
+  max-width: 600px;
+}
+
+.main-image img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
 header{
     background-color: #f0f0f0;
     width: 100%;
@@ -181,13 +201,48 @@ opacity: 0.9;
     
     
     }
+.project-image {
+  height: 400px; /* consistent height for all images */
+  overflow: hidden;
+  border-top-left-radius: 0.75rem;  /* match card radius if needed */
+  border-top-right-radius: 0.75rem;
+}
 
 .project-image img{
-    width: 100%;
-
-
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or 'contain' if you want the whole image visible */
+  display: block;
 }
+.project-image .slider img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover; /* or 'contain' if you want the whole image visible */
+  display: block;
+}
+/* Height for course certificate images */
+.course-image {
+  height: 400px; /* or any value suitable for certificates */
+}
+
+.course-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Height for slider images */
+.slider-image {
+  height: 800px; /* larger height for project showcases */
+}
+
+.slider-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
 .project-info{
 
 padding: 1em;
@@ -247,6 +302,43 @@ margin-top: 10px;
     font-size: 1em;
     padding: 0 12px 0 0;
 }
+.slider {
+  position: relative;
+}
+
+.slider .slide {
+  display: none;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider .slide.active {
+  display: block;
+}
+
+.slider .prev, .slider .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 1.5em;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider .prev {
+  left: 5px;
+}
+
+.slider .next {
+  right: 5px;
+}
+
 @media (max-width :1024px){
 
 
